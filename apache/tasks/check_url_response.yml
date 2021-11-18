@@ -1,0 +1,9 @@
+---
+- name: Check url response.yml
+  uri:
+   url: "{{item}}"
+   status_code: 200
+  with_items:
+   - http://172.31.125.129
+   - http://172.31.95.89
+...
